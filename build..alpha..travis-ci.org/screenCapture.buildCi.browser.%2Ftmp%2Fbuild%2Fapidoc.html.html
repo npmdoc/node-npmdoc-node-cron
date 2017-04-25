@@ -56,15 +56,6 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.node-cron.pattern_validation">
-            function <span class="apidocSignatureSpan">node-cron.</span>pattern_validation
-            <span class="apidocSignatureSpan">(pattern)</span>
-            </a>
-
-        </li>
-
-        <li>
-
             <a class="apidocElementLiA" href="#apidoc.element.node-cron.schedule">
             function <span class="apidocSignatureSpan">node-cron.</span>schedule
             <span class="apidocSignatureSpan">(expression, func, immediateStart)</span>
@@ -99,32 +90,6 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-cron.</span>task.prototype</span>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.node-cron.pattern_validation">module node-cron.pattern_validation</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.node-cron.pattern_validation.pattern_validation">
-            function <span class="apidocSignatureSpan">node-cron.</span>pattern_validation
-            <span class="apidocSignatureSpan">(pattern)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.node-cron.schedule">module node-cron.schedule</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.node-cron.schedule.schedule">
-            function <span class="apidocSignatureSpan">node-cron.</span>schedule
-            <span class="apidocSignatureSpan">(expression, func, immediateStart)</span>
-            </a>
 
         </li>
 
@@ -207,51 +172,6 @@
 
 
     <h2>
-        <a href="#apidoc.element.node-cron.pattern_validation" id="apidoc.element.node-cron.pattern_validation">
-        function <span class="apidocSignatureSpan">node-cron.</span>pattern_validation
-        <span class="apidocSignatureSpan">(pattern)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function validate(pattern){
-  var patterns = pattern.split(' ');
-  var executablePattern = convertExpression(pattern);
-  var executablePatterns = executablePattern.split(' ');
-
-  if(patterns.length === 5){
-    patterns = ['0'].concat(patterns);
-  }
-
-  if (isInvalidSecond(executablePatterns[0])) {
-    throw patterns[0] + ' is a invalid expression for second';
-  }
-
-  if (isInvalidMinute(executablePatterns[1])) {
-    throw patterns[1] + ' is a invalid expression for minute';
-  }
-
-  if (isInvalidHour(executablePatterns[2])) {
-    throw patterns[2] + ' is a invalid expression for hour';
-  }
-
-  if (isInvalidDayOfMonth(executablePatterns[3])) {
-    throw patterns[3] + ' is a invalid expression for day of month';
-  }
-
-  if (isInvalidMonth(executablePatterns[4])) {
-    throw patterns[4] + ' is a invalid expression for month';
-  }
-
-  if (isInvalidWeekDay(executablePatterns[5])) {
-    throw patterns[5] + ' is a invalid expression for week day';
-  }
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
         <a href="#apidoc.element.node-cron.schedule" id="apidoc.element.node-cron.schedule">
         function <span class="apidocSignatureSpan">node-cron.</span>schedule
         <span class="apidocSignatureSpan">(expression, func, immediateStart)</span>
@@ -327,94 +247,6 @@ This is a quick reference to cron syntax and also shows the options supported by
 
 
 
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.node-cron.pattern_validation" id="apidoc.module.node-cron.pattern_validation">module node-cron.pattern_validation</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.node-cron.pattern_validation.pattern_validation" id="apidoc.element.node-cron.pattern_validation.pattern_validation">
-        function <span class="apidocSignatureSpan">node-cron.</span>pattern_validation
-        <span class="apidocSignatureSpan">(pattern)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function validate(pattern){
-  var patterns = pattern.split(' ');
-  var executablePattern = convertExpression(pattern);
-  var executablePatterns = executablePattern.split(' ');
-
-  if(patterns.length === 5){
-    patterns = ['0'].concat(patterns);
-  }
-
-  if (isInvalidSecond(executablePatterns[0])) {
-    throw patterns[0] + ' is a invalid expression for second';
-  }
-
-  if (isInvalidMinute(executablePatterns[1])) {
-    throw patterns[1] + ' is a invalid expression for minute';
-  }
-
-  if (isInvalidHour(executablePatterns[2])) {
-    throw patterns[2] + ' is a invalid expression for hour';
-  }
-
-  if (isInvalidDayOfMonth(executablePatterns[3])) {
-    throw patterns[3] + ' is a invalid expression for day of month';
-  }
-
-  if (isInvalidMonth(executablePatterns[4])) {
-    throw patterns[4] + ' is a invalid expression for month';
-  }
-
-  if (isInvalidWeekDay(executablePatterns[5])) {
-    throw patterns[5] + ' is a invalid expression for week day';
-  }
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.node-cron.schedule" id="apidoc.module.node-cron.schedule">module node-cron.schedule</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.node-cron.schedule.schedule" id="apidoc.element.node-cron.schedule.schedule">
-        function <span class="apidocSignatureSpan">node-cron.</span>schedule
-        <span class="apidocSignatureSpan">(expression, func, immediateStart)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function createTask(expression, func, immediateStart) {
-  var task = new Task(expression, func);
-
-  return new ScheduledTask(task, immediateStart);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-```
-
-Import node-cron and schedule a task:
-
-```javascript
-var cron = require('node-cron');
-
-cron.<span class="apidocCodeKeywordSpan">schedule</span>('* * * * *', function(){
-  console.log('running a task every minute');
-});
-```
-
-## Cron Syntax
-
-This is a quick reference to cron syntax and also shows the options supported by node-cron.
-...</pre></li>
-    </ul>
 
 
 </div>
