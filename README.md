@@ -1,4 +1,7 @@
-# api documentation for  [node-cron (v1.1.3)](http://merencia.com/node-cron/)  [![npm package](https://img.shields.io/npm/v/npmdoc-node-cron.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-node-cron) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-node-cron.svg)](https://travis-ci.org/npmdoc/node-npmdoc-node-cron)
+# npmdoc-node-cron
+
+#### basic api documentation for  [node-cron (v1.1.3)](http://merencia.com/node-cron/)  [![npm package](https://img.shields.io/npm/v/npmdoc-node-cron.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-node-cron) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-node-cron.svg)](https://travis-ci.org/npmdoc/node-npmdoc-node-cron)
+
 #### A simple cron-like task scheduler for Node.js
 
 [![NPM](https://nodei.co/npm/node-cron.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/node-cron)
@@ -66,7 +69,8 @@
         "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
         "test": "./node_modules/mocha/bin/mocha --recursive"
     },
-    "version": "1.1.3"
+    "version": "1.1.3",
+    "bin": {}
 }
 ```
 
